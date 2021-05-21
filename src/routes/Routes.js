@@ -3,6 +3,8 @@ import { BrowserRouter,  Route, Switch } from 'react-router-dom'
 import Task from '../components/Task/Task'
 import App from '../containers/App/App'
 
+import MyTablePagination from '../components/Faculty/table_pagination';
+
 const Routes = () => {
   return (
     <BrowserRouter>
@@ -16,6 +18,10 @@ const Routes = () => {
               <Switch>
                 <Route path="/dashboard/test">
                   <Task />
+                </Route>
+
+                <Route path="/faculty/accept">
+                  <MyTablePagination />
                 </Route>
               </Switch>
             </Dashboard>

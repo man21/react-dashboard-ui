@@ -11,7 +11,7 @@ const Dashboard = (props) => {
       <Header />
       <div className={classes.bodyContainer}>
         <SideDrawer />
-        <div className={classes.mainSectionContainer}>{props.children}</div>
+        <div style={{paddingTop: "20px", paddingLeft: "30px", paddingRight: "30px", paddingBottom: "30px"}} className={classes.mainSectionContainer}>{props.children}</div>
       </div>
     </div>
   )
